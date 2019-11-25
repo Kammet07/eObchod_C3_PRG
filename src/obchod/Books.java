@@ -6,27 +6,27 @@ class Books {
     private String author;
 
     Books(int price, String name, String author){
-        this.price = price;
-        this.name = name;
-        this.author = author;
+        setPrice(price);
+        setName(name);
+        setAuthor(author);
     }
 
-    public int getPrice() {
+    int getPrice() {
         return price;
     }
-    public void setPrice(int price) {
+    private void setPrice(int price) {
         this.price = price;
     }
-    public String getName() {
+    String getName() {
         return name;
     }
-    public void setName(String name) {
+    private void setName(String name) {
         this.name = name;
     }
-    public String getAuthor() {
+    String getAuthor() {
         return author;
     }
-    public void setAuthor(String author) {
+    private void setAuthor(String author) {
         this.author = author;
     }
 }

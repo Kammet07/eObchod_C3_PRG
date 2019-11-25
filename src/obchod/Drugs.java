@@ -6,27 +6,27 @@ class Drugs {
     private String manufacturer;
 
     Drugs(int price, String name, String manufacturer){
-        this.price = price;
-        this.name = name;
-        this.manufacturer = manufacturer;
+        setPrice(price);
+        setName(name);
+        setManufacturer(manufacturer);
     }
 
-    public int getPrice() {
+    int getPrice() {
         return price;
     }
-    public void setPrice(int price) {
+    private void setPrice(int price) {
         this.price = price;
     }
-    public String getName() {
+    String getName() {
         return name;
     }
-    public void setName(String name) {
+    private void setName(String name) {
         this.name = name;
     }
-    public String getManufacturer() {
+    String getManufacturer() {
         return manufacturer;
     }
-    public void setManufacturer(String manufacturer) {
+    private void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
 }

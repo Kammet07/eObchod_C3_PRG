@@ -6,27 +6,28 @@ class Electronics {
     private String label;
 
     Electronics(int price, String name, String label){
-        this.price = price;
-        this.name = name;
-        this.label = label;
+        setPrice(price);
+        setName(name);
+        setLabel(label);
+
     }
 
-    public int getPrice() {
+    int getPrice() {
         return price;
     }
-    public void setPrice(int price) {
+    private void setPrice(int price) {
         this.price = price;
     }
-    public String getName() {
+    String getName() {
         return name;
     }
-    public void setName(String name) {
+    private void setName(String name) {
         this.name = name;
     }
-    public String getLabel() {
+    String getLabel() {
         return label;
     }
-    public void setLabel(String label) {
+    private void setLabel(String label) {
         this.label = label;
     }
 }
