@@ -1,12 +1,14 @@
-class Books {
+package obchod;
+
+class Drugs {
     private int price;
     private String name;
-    private String author;
+    private String manufacturer;
 
-    Books(int price, String name, String author){
+    Drugs(int price, String name, String manufacturer){
         this.price = price;
         this.name = name;
-        this.author = author;
+        this.manufacturer = manufacturer;
     }
 
     public int getPrice() {
@@ -21,10 +23,10 @@ class Books {
     public void setName(String name) {
         this.name = name;
     }
-    public String getAuthor() {
-        return author;
+    public String getManufacturer() {
+        return manufacturer;
     }
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
     }
 }

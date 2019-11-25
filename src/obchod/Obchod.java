@@ -1,3 +1,5 @@
+package obchod;
+
 public class Obchod {
 
     public static void main(String[] args) {

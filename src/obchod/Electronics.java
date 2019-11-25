@@ -1,12 +1,14 @@
-class Drugs {
+package obchod;
+
+class Electronics {
     private int price;
     private String name;
-    private String manufacturer;
+    private String label;
 
-    Drugs(int price, String name, String manufacturer){
+    Electronics(int price, String name, String label){
         this.price = price;
         this.name = name;
-        this.manufacturer = manufacturer;
+        this.label = label;
     }
 
     public int getPrice() {
@@ -21,10 +23,10 @@ class Drugs {
     public void setName(String name) {
         this.name = name;
     }
-    public String getManufacturer() {
-        return manufacturer;
+    public String getLabel() {
+        return label;
     }
-    public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
+    public void setLabel(String label) {
+        this.label = label;
     }
 }
